@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css'; 
 
 function App() {
+  let element = new Date();
+  element = element.getHours();
+  let greeting = "";
+  const styles = {};
+  if (element >= 1 && element < 12) {
+    greeting = "Good Morning";
+    styles.color = "red";
+  } else if (element >= 12 && element < 19) {
+    greeting = "Good Afternoon";
+    styles.color = "green";
+  } else {
+    greeting = "Good Night";
+    styles.color = "black";
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <h1>
+          Hello Sir,<span style={styles}>{greeting}</span>
+        </h1>
+      </div>
+    </>
   );
 }
 
