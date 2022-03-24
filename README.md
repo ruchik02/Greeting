@@ -1,3 +1,7 @@
+Netlify Link:https://greeting-react.netlify.app
+
+![greeting](https://user-images.githubusercontent.com/83516020/159933236-63f58691-6f2e-4f6f-ad64-bf15f918134a.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
